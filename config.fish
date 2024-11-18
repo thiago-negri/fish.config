@@ -3,7 +3,7 @@ if status is-interactive
 end
 
 function wezsetcwd --on-event fish_prompt
-  wezterm set-working-directory
+  which wezterm && wezterm set-working-directory
 end
 
 function fish_rm_path --argument path
