@@ -20,4 +20,7 @@ function fish_rm_path --argument path
     set -e fish_user_paths[$path_index]
 end
 
-alias l "ls -la"
+alias l "ls -lah"
+
+# Set up fzf key bindings
+fzf --fish | source
